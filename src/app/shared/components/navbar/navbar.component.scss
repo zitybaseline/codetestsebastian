@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid#dde3e8;
+    font-size: 1rem;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        padding: 0 1rem;
+      }
+    }
+  
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-style: bold;
+      font-weight: 700;
+      color: #299ba1;
+    }
+  
+    .navbar-logo { 
+      height: 60px;
+    }
+  
+    .navbar-nav {
+      display: flex;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+  
+      .nav-item {
+        margin-right: 3rem;
+  
+        &.nav-link {
+          color: #636a71;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+  
+          &:hover {
+            color: #299ba1;
+            border-bottom: 2px solid #fc976e;
+          }
+        }
+      }
+    }
+
+    .menu-btn {
+      display: none;
+      background-color: #fff;
+      border: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      .menu-btn-icon {
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 0.73rem;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  
+    .social-links path {
+      transition: fill 0.3s ease;
+      fill: #299ba1;
+    }
+  
+    .social-links a:hover svg path {
+      fill: #fc976e;
+    }
+  }
