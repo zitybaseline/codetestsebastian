@@ -79,3 +79,7 @@
       </div>
     </div>
   </nav>
+
+  <div *ngIf="isMenuOpen()" class="navmenu" (click)="onOutsideClick($event)">
+    <app-navmenu></app-navmenu>
+  </div>

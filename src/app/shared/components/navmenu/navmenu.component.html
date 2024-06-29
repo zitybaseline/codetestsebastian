@@ -1,0 +1,5 @@
+<div class="container">
+    <div class="navmenu-nav" *ngFor="let link of navLinks">
+        <a class="nav-item nav-link" [routerLink]="'/' + link">{{ link | titlecase }}</a>
+      </div>
+</div>
